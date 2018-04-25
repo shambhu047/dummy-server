@@ -4,8 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile": "node_modules/.bin/tsc",
+    "compile-watch": "node_modules/.bin/tsc -w",
+    "deploy": "node index.js"
   },
   "author": "Shambhu Kumar",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@types/aws-sdk": "^2.7.0",
+    "typescript": "^2.8.3"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.229.1"
+  }
 }
